@@ -49,7 +49,7 @@ st.markdown("""
 def charger_donnees():
     """Charger et prétraiter les données de similarité"""
     try:
-        df =pd.read_excel(r"project_level_similarity_mixed.xlsx")
+        df =pd.read_excel("project_level_similarity_mixed.xlsx")
         return df
     except Exception as e:
         st.error(f"Erreur lors du chargement des données : {e}")
