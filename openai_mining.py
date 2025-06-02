@@ -440,7 +440,7 @@ def main():
         """)
         
         # Chargement de la clé API OpenAI depuis st.secrets, sinon variable d'environnement
-        openai.api_key = st.secrets.get("openai_api_key", "")
+        openai.api_key = st.secrets["openai_api_key"]
         
         # Pré-prompt pour l'assistant
         pre_prompt = (
