@@ -620,7 +620,7 @@ with onglet2:
     colonnes_affichees = st.multiselect(
         "Colonnes à afficher",
         colonnes_disponibles,
-        default=['acronyme_anr', 'acronyme_cordis', 'tfidf_score', 'bert_score'],
+        default=['code_projet_anr', 'cordis_id', 'text_anr', 'text_cordis', 'bert_score', 'tfidf_score'],
         key="donnees_columns"
     )
 
